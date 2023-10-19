@@ -1,11 +1,11 @@
 import { BiSolidNews } from 'react-icons/bi';
 import "react-toastify/dist/ReactToastify.css";
 import { toast } from "react-toastify";
+import { useState } from 'react';
 
 const Newsletter = () => {
+    const [email, setEmail] = useState('');
     const handleNewsletter = () => {
-        const emailInput = document.getElementById("email-input");
-        const email = emailInput.value;
         if (email) {
             toast(`Thank you for subscribing to our newsletter! Check your email at ${email} for the latest updates.`);
         } else {
@@ -21,6 +21,7 @@ const Newsletter = () => {
                     className="w-3/5 h-full px-8 bg-transparent outline-none border-none"
                     type="text"
                     placeholder="Enter Your Email..."
+                    onChange={(e) => setEmail(e.target.value)}
                 />
                 
                 <button

@@ -29,8 +29,7 @@ const Cart = ({ isCartVisible, setIsCartVisible }) => {
         },
     ];
 
-    const handleAddToCart = (variant) => {
-        const price = variantPrices[variant];
+    const handleAddToCart = (variant,price) => {
         addToCart(variant, price);
     };
     const handleRemoveFromCart = (variant) => {
@@ -47,7 +46,7 @@ const Cart = ({ isCartVisible, setIsCartVisible }) => {
                         <CartItem
                             key={index}
                             imageSrc={variation.imageSrc}
-                            onAddToCart={() => handleAddToCart(variation.variation)}
+                            onAddToCart={() => handleAddToCart(variation.variation, variation.price)}
                             onRemoveFromCart={() => handleRemoveFromCart(variation.variation)}
                             title={variation.title}
                             variation={variation.variation}
