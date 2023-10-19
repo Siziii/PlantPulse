@@ -11,8 +11,12 @@ const Hero = () => {
             <div className='flex flex-col h-screen'>
 
                 {/* Blob animation */}
-                <img src={blobAnimation} alt='blobanimation' className='absolute -z-10 w-full sm:w-[30rem] top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2' />
-
+                <img
+                    src={blobAnimation}
+                    alt='blobanimation'
+                    className='absolute -z-10 w-full sm:w-[30rem] top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2'
+                    
+                />
                 {/* Title and image */}
                 <Reveal>
                 <h1 className='pointer-events-none text-vw-16 lg:text-[12rem] xl:text-[15rem] mt-[20vh] sm:mt-40 md:mt-32 lg:mt-20 font-black text-center text-dark-primary'>DISCOVER</h1>

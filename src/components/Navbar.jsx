@@ -59,8 +59,8 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className={'z-50 fixed left-0 top-0 w-full'}>
-                <div className={`z-60 flex justify-between items-center h-16 mx-auto px-8 text-white bg-[#262524]`}>
+            <div className={'z-40 fixed left-0 top-0 w-full'}>
+                <div className={`flex justify-between items-center h-16 mx-auto px-8 text-white bg-[#262524]`}>
 
                     {/* Cart icon mobile*/}
                     <div className='md:hidden lg:w-60'>
@@ -109,7 +109,7 @@ const Navbar = () => {
 
             {/* mobile dropdowns*/}
 
-            <div className='z-40 fixed left-0 top-0 w-full'>
+            <div className='z-30 fixed left-0 top-0 w-full'>
                 <AnimatePresence
                     initial={false}
                     mode="wait"
@@ -126,7 +126,7 @@ const Navbar = () => {
                     )}
                 </AnimatePresence>
             </div>
-            <div className='z-40 fixed left-0 top-0 w-full'>
+            <div className='z-30 fixed left-0 top-0 w-full'>
                 <AnimatePresence
                     initial={false}
                     mode="wait"
@@ -145,7 +145,7 @@ const Navbar = () => {
             </div>
 
             {/* overlay */}
-            <div className={`z-30 fixed w-screen h-screen bg-black-overlay ${isCartVisible || isNavVisible ? 'visible' : 'hidden'}`}/>
+            <div className={`z-20 fixed w-screen h-screen bg-black-overlay ${isCartVisible || isNavVisible ? 'visible' : 'hidden'}`}/>
         </div>
     );
 };
