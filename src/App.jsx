@@ -14,10 +14,11 @@ function App() {
 
   //handle preloader
   useEffect(() => {
+    const delay = 1000;
     const timeoutId = setTimeout(() => {
       setIsLoading(false);
     }, delay);
-    
+
     return () => clearTimeout(timeoutId);
   }, []);
 
