@@ -14,24 +14,10 @@ function App() {
 
   //handle preloader
   useEffect(() => {
-    let isLoadingTimeout = false;
-    let isLoadingWindow = false;
-    const delay = 1000
-
     const timeoutId = setTimeout(() => {
-      isLoadingTimeout = true;
-      checkLoadingState()
+      setIsLoading(false);
     }, delay);
-
-    window.onload = () => {
-      isLoadingWindow = true;
-      checkLoadingState()
-    };
-    const checkLoadingState = () =>{
-      if (isLoadingTimeout && isLoadingWindow) {
-        setIsLoading(false);
-      }
-    }
+    
     return () => clearTimeout(timeoutId);
   }, []);
 
