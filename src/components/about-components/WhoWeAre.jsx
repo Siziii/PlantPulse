@@ -1,4 +1,4 @@
-import blobAnimation from '../../assets/blobAnimation_2.svg'
+import blobAnimation from '../../assets/blobanimation_2.svg'
 import Reveal from './../utils/Reveal';
 
 const WhoWeAre = () => {

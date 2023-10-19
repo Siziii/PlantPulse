@@ -1,5 +1,5 @@
 import planterImage from '../assets/planter01.png';
-import blobAnimation from '../assets/blobAnimation.svg'
+import blobAnimation from '../assets/blobanimation.svg'
 import { AiOutlineArrowDown } from 'react-icons/ai';
 import circle_outline from '../assets/circle_outline.svg'
 import Reveal from './utils/Reveal';
