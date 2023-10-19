@@ -8,6 +8,7 @@ import NavBarMobile from './navbar-components/NavbarMobile';
 import circle_outline from '../assets/circle_outline.svg'
 import { useCart } from '../CartContext';
 import NavbarDesktop from './navbar-components/NavbarDesktop';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const [isNavVisible, setIsNavVisible] = useState(false);
@@ -77,11 +78,12 @@ const Navbar = () => {
                     </div>
 
                     {/* Title*/}
-                    <div className='flex items-center lg:w-60'>
+                    <Link to="home" smooth={true} offset={-64} duration={500}>
+                    <div className='flex items-center lg:w-60 cursor-pointer'>
                         <img src={logo} alt="logo" className='h-10 sm:mr-4' />
                         <h1 className='hidden sm:block text-xl sm:text-3xl font-bold'>PlantPulse</h1>
                     </div>
-
+                    </Link>
                     <NavbarDesktop />
 
                     {/* Cart icon desktop*/}
