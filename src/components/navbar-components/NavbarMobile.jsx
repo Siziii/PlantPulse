@@ -10,7 +10,7 @@ const navLinks = [
 
 //Navbar item template
 const NavItem = ({ to, text }) => (
-    <Link to={to} smooth={true} offset={-64} duration={500}>
+    <Link to={to} smooth={true} offset={-63} duration={500}>
         <li className='p-4 border-b-2 border-dark-primary cursor-pointer'> 
                 {text}
         </li>

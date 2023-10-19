@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     let isLoadingTimeout = false;
     let isLoadingWindow = false;
-    const delay = 2000
+    const delay = 1000
 
     const timeoutId = setTimeout(() => {
       isLoadingTimeout = true;
